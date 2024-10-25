@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:ignore="ExtraText"
+    android:background="#c8b6ff">
+
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:src="@drawable/margaritas"
+    android:scaleType="fitXY"
+    android:layout_gravity="top"
+    tools:ignore="MissingConstraints"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Registro"
+            android:textAlignment="center"
+            android:textColor="#833DAF"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:fontFamily="sans-serif-condensed-light"/>
+            <LinearLayout
+                android:layout_width="390dp"
+                android:layout_height="640dp"
+                android:layout_marginTop="88dp"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:background="#ffd6ff"
+                android:padding="20dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese su nombre de usuario"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#833DAF"/>
+                <EditText
+                    android:id="@+id/nuevousuario"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Ingrese su nombre de usuario"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="15sp"
+                    android:textColor="#833DAF"    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese su fecha de nacimiento"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#833DAF"/>
+                <EditText
+                    android:id="@+id/cumpleaños"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="xx/xx/xxxx"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:textSize="15sp"
+                    android:textColor="#833DAF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ingrese su contraseña"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#833DAF"/>
+                <EditText
+                    android:id="@+id/contraseñanueva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="numeros, simbolos y letras *#.;"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textSize="15sp"
+                    android:textColor="#833DAF"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Repita su contraseña"
+                    android:padding="10dp"
+                    android:textSize="20sp"
+                    android:textColor="#833DAF"/>
+                <EditText
+                    android:id="@+id/contraseñanueva2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints=""
+                    android:hint="numeros, simbolos y letras *#.;"
+                    android:inputType="textPassword"
+                    android:minHeight="48dp"
+                    android:textSize="15sp"
+                    android:textColor="#833DAF"/>
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:id="@+id/botonRegistro"
+                    android:onClick="onClickRegistro"
+                    android:text="Registrar"
+                    android:backgroundTint="#A38BF2"/>
+
+                <!-- texto visible -->
+                <TextView
+                    android:id="@+id/texto1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Registrando usuario"
+                    android:textSize="24sp"
+                    android:visibility="gone"
+                    android:textColor="@color/black"
+                    android:layout_gravity="center"
+                    android:gravity="center"/>
+                <!-- barra de progreso -->
+                <ProgressBar
+                    android:id="@+id/barraDeProgreso"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    android:layout_marginTop="20dp"/>
+
+                <!--imagen -->
+                <ImageView
+                    android:visibility="invisible"
+                    android:id="@+id/nuevo"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/nuevo"/>
+
+            </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
