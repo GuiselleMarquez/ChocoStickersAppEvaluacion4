@@ -37,6 +37,7 @@ public class VentanaRegistro extends AppCompatActivity
                 textView.setVisibility(View.VISIBLE);
                 imageView.setVisibility(View.VISIBLE);
 
+
                 //ejecutar el thread
                 new Thread(new Runnable(){
                     @Override
@@ -54,14 +55,19 @@ public class VentanaRegistro extends AppCompatActivity
                                 progressBar.setVisibility(View.GONE);
                                 textView.setText("Usuario creado con exito!");
 
+
+
                             }
+
                         });
                     }
                 }).start();
             }
 
+
         });
 
     }
+
 }
 

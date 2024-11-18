@@ -7,6 +7,7 @@
     tools:ignore="ExtraText"
     android:background="#c8b6ff">
 
+    <!--Background y titulo de la pagina-->
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -40,6 +41,8 @@
                 android:background="#ffd6ff"
                 android:padding="20dp">
 
+
+                <!--Campos rellenables-->
 
                 <TextView
                     android:layout_width="match_parent"
@@ -128,6 +131,8 @@
                     android:textColor="@color/black"
                     android:layout_gravity="center"
                     android:gravity="center"/>
+
+
                 <!-- barra de progreso -->
                 <ProgressBar
                     android:id="@+id/barraDeProgreso"

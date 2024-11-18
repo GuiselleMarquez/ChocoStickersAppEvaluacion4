@@ -23,19 +23,19 @@ public class VentanaMapa extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.ventana_mapa);
 
-        //Cargar las configuraciones del mapa usasndo las preferencias predeterminadas.
+        //Cargamos las configuraciones del mapa usando las preferencias predeterminadas
         Configuration.getInstance().load(getApplicationContext(), PreferenceManager.getDefaultSharedPreferences(getApplicationContext()));
 
-        //Obtiene la referencia al componente Mapview del layout
+        //Obtenemos la referencia al componente Mapview del layout
         MapView mapView = findViewById(R.id.mapView);
 
-        //Establece la fuente de los mapas a utilizar en el MapView, en este caso el mapa predeterminado de OpenStreetMap (MAPNIK)
+        //Establecemos la fuente de los mapas a utilizar en el MapView, en este caso el mapa predeterminado de OpenStreetMap (MAPNIK)
         mapView.setTileSource(TileSourceFactory.MAPNIK);
 
-        //Activa los controles de zoom integrados en el MapView
+        //Activamos los controles de zoom integrados en el MapView
         mapView.setBuiltInZoomControls(true);
 
-        //Habilita los controles multitáctiles para permitir gestos como el zoom con dos dedos
+        //Habilitamos los controles multitáctiles para permitir gestos como el zoom con dos dedos
         mapView.setMultiTouchControls(true);
 
 
@@ -46,8 +46,12 @@ public class VentanaMapa extends AppCompatActivity {
 
         //GeoPoint para las coordenadas de nuestra tienda
         GeoPoint TiendaPoint = new GeoPoint(tiendaLatitud, tiendaLongitud);
+
+
         //Configuramos la vista incial con un nivel de zoom de 20.
         mapView.getController().setZoom(17.0);
+
+
         //centramos el mapa en el punto de nuestra tienda
         mapView.getController().setCenter(TiendaPoint);
 
@@ -63,11 +67,13 @@ public class VentanaMapa extends AppCompatActivity {
 
 
 
-        //---agregamos un segundo marcador para indicar la cercania con el metro ---
+        //agregamos un segundo marcador para indicar la cercania con el metro
 
         //coordenadas metro
-        double metroLatitud = -33.444877320495436;
-        double metroLongitud = -70.65481939946211;
+        double metroLatitud = -33.444877320495436;//latitud
+        double metroLongitud = -70.65481939946211;//longitud
+
+
         //objeto geopoint y marcadores
         GeoPoint metroPoint = new GeoPoint(metroLatitud, metroLongitud);
         Marker marcadorMetro = new Marker(mapView);

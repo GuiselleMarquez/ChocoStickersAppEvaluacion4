@@ -15,7 +15,7 @@
         android:scaleType="fitXY"
         android:layout_gravity="top"
         tools:ignore="MissingConstraints" />
-
+<!--Tituto-->
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
@@ -29,6 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="sans-serif-condensed-light" />
+    <!--Boton Inicio de sesion -->
     <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -40,6 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="#A38BF2"/>
 
+    <!--Boton de registro-->
     <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -51,6 +53,8 @@
         app:layout_constraintStart_toStartOf="parent"
         android:backgroundTint="#A38BF2"/>
 
+
+    <!--Boton de Mapa a la tienda-->
     <Button
         android:layout_width="300dp"
         android:layout_height="50dp"
@@ -79,6 +83,7 @@
             app:layout_constraintTop_toTopOf="parent"
             android:background="#e7c6ff">
 
+            <!--Primera card view de uno de los stickers-->
             <LinearLayout
                 android:layout_width="379dp"
                 android:layout_height="100dp"

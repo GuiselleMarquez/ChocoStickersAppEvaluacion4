@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -39,6 +40,8 @@
         app:layout_constraintTop_toTopOf="parent"
         android:padding="20dp">
 
+
+        <!--Campos de relleno-->
         <EditText
             android:id="@+id/usuario"
             android:layout_width="match_parent"
@@ -71,6 +74,8 @@
             android:text="Recordarme en redondito"
             android:textColor="#833DAF"/>
 
+
+        <!--Boton para acceder-->
         <Button
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -79,9 +84,20 @@
             android:text="Acceder"
             android:backgroundTint="#A38BF2"/>
 
-
-
-
-
     </LinearLayout>
+
+
+    <!--Boton para ingresar a la pagina de inventario-->
+    <Button
+        android:id="@+id/inventario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A38BF2"
+        android:onClick="onClickInventario"
+        android:text="Inventario"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

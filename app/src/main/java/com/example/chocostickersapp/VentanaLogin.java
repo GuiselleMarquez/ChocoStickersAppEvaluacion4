@@ -13,4 +13,11 @@ public class VentanaLogin extends AppCompatActivity
         setContentView(R.layout.activity_login);
     }
 
+    //Metodo para el boton inventario//
+    public void onClickInventario(View view) {
+        Intent intent = new Intent(this, VentanaClave.class);
+        startActivity(intent);
+    }
+
+
 }

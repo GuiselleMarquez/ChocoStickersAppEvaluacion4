@@ -8,6 +8,7 @@
     tools:context=".MainActivity"
     android:background="#ffd6ff">
 
+    <!--Background y titulo de la pagina-->
 <ImageView
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -30,6 +31,8 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:fontFamily="sans-serif-condensed-light"/>
+
+    <!--Descripcion de la tienda en el mapa-->
     <TextView
         android:id="@+id/descripcion_mapa"
         android:layout_width="wrap_content"

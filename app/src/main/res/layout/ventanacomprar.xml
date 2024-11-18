@@ -6,15 +6,18 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#bbd0ff">
 
-<ImageView
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:src="@drawable/margaritas"
-    android:scaleType="fitXY"
-    android:layout_gravity="top"
-    tools:ignore="MissingConstraints" />
+    <!--Bacground y titulo de la pagina-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:scaleType="fitXY"
+        android:src="@drawable/margaritas"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-161dp"
+        tools:layout_editor_absoluteY="0dp" />
 
-<LinearLayout
+    <LinearLayout
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:id="@+id/linearLayout"
@@ -35,6 +38,7 @@
         android:fontFamily="sans-serif-condensed-light"/>
 
 
+    <!--Tabla con el contenido-->
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -104,15 +108,19 @@
                 android:textSize="15sp" />
         </TableRow>
 
+
+        <!--Boton de comprar-->
         <Button
+            android:id="@+id/comprar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:onClick="onClickcomprar"
+
             android:text="Comprar"
             android:backgroundTint="#A38BF2"/>
     </TableLayout>
 
+    <!--Estrellitas de puntuacion-->
     <RatingBar
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -124,6 +132,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="50dp" />
+
+    <!--Boton a la pagina multimedia -->
+    <Button
+        android:id="@+id/contMultimedia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A38BF2"
+        android:onClick="onClickmultimedia"
+        android:text="Contenido multimedia✨"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="16dp"
+        />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

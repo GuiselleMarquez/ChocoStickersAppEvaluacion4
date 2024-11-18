@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#c8b6ff">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/margaritas"
+        android:scaleType="fitXY"
+        android:layout_gravity="top"
+        tools:ignore="MissingConstraints" />
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ChocoInventario"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#833DAF"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:fontFamily="sans-serif-condensed-light"/>
+
+        <!-- Campo de texto para clave numérica -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ingrese su clave"
+            android:inputType="numberPassword"
+            android:padding="12dp"
+            android:background="@android:drawable/edit_text"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botón de inicio de sesión -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acceder"
+            android:background="#6200EE"
+            android:textColor="#FFF"
+            android:padding="12dp"
+            android:onClick="onClickCrud"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

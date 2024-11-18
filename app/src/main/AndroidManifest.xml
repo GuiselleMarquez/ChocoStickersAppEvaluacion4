@@ -6,6 +6,8 @@
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
 
     <application
         android:allowBackup="true"
@@ -26,10 +28,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".VentanaLogin"></activity>
-        <activity android:name=".VentanaRegistro"></activity>
-        <activity android:name=".VentanaComprar"></activity>
-        <activity android:name=".VentanaMapa"></activity>
+
+        <!-- Otras actividades -->
+        <activity android:name=".VentanaLogin" />
+        <activity android:name=".VentanaRegistro" />
+        <activity android:name=".VentanaComprar" />
+        <activity android:name=".VentanaMultimedia" />
+        <activity android:name=".VentanaMapa" />
+        <activity android:name=".DataHelper" />
+
+        <!-- Actividad para el inicio de sesión -->
+        <activity android:name=".VentanaClave" android:exported="true"/>
+
+        <!-- Actividad del inventario -->
+        <activity android:name=".VentanaInventario" android:exported="true"
+            />
+
     </application>
 
 </manifest>
