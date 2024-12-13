@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "759453682173",
+    "project_id": "chocostickersapp",
+    "storage_bucket": "chocostickersapp.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759453682173:android:7c4d33ea908a3e4f2ef194",
+        "android_client_info": {
+          "package_name": "com.example.chocostickersapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABLcnluSWC4GAWEB44brW_MYD5XvA4xlw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
